@@ -33,7 +33,6 @@ public void setMines()
          int col = (int)(Math.random()*NUM_COLS);
          if(!mines.contains(buttons[row][col])){
             mines.add(buttons[row][col]);
-            System.out.println(row + " , "+ col);
     }
     }
     
@@ -63,6 +62,7 @@ public void displayLosingMessage()
     
     buttons[NUM_ROWS/2][NUM_COLS/2].setLabel("You");
     buttons[NUM_ROWS/2][NUM_COLS/2+1].setLabel("Lose");
+
 }
 public void displayWinningMessage()
 {
